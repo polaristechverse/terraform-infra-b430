@@ -45,7 +45,7 @@ resource "aws_route_table_association" "demopublicassociation" {
 }
 
 resource "aws_security_group" "webserver" {
-  vpc_id      = aws_vpc.NewBank-vpc.id
+  vpc_id      = aws_vpc.demovpc.id
   description = "allow web access"
   name        = "webaccess"
   tags = {
